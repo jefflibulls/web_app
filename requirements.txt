@@ -1,7 +1,7 @@
 pandas
 joblib
 numpy
-sklearn
+scikit-learn
 amadeus
 meteostat
 streamlit
