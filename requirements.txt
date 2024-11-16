@@ -7,3 +7,4 @@ meteostat
 streamlit
 streamlit_option_menu
 pyarrow
+xgboost
