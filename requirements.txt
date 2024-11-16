@@ -1,0 +1,8 @@
+pandas
+joblib
+numpy
+sklearn
+amadeus
+meteostat
+streamlit
+pyarrow
