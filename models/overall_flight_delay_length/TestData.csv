@@ -1,0 +1,2 @@
+﻿Month,DayofMonth,Reporting_Airline,Origin,Dest,DepTimeBlk,ORIGIN_RWY_CNT,DEST_RWY_CNT,prcp_origin,wspd_origin,wpgt_origin,prcp_dest,wspd_dest,wpgt_dest
+1,13,9E,LGA,BGM,2100-2159,,,,,,,,

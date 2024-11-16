@@ -1,0 +1,29 @@
+Instructions for starting up the web app:
+
+1- Required libraries:
+    - joblib
+    - pandas
+    - numpy
+    - sklearn (Make sure it's version 1.5.1 or newer)
+    - streamlit
+    - PyArrow
+    - amadeus (future flight info API)
+    - meteostat (weather forecast API)
+
+    - If you don't have any of the above libaries:
+        - pip install "library name"
+
+    - If you need to update a version of a library:
+        - pip install "library name"=="version_number"
+        - pip install --upgrade "library name"
+
+2- Relevant Python codes:
+    - modeling_scoring.py (Custom library containing classes for model scoring)
+    - flight_planning_webapp.py (Web app using Streamlit)
+
+3- How to run the web app locally:
+    - In command line or terminal, navigate to this directory and type:
+        - streamlit run flight_planning_webapp.py
+    - After running the above command, you will be provided a local URL in the form:
+        - http://localhost.8501
+    - Open that URL in your web browser.

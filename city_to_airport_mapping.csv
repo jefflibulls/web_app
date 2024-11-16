@@ -1,0 +1,352 @@
+,CityName,Airport
+0,"Hartford, CT",BDL
+6,"New York, NY",LGA
+13,"Duluth, MN",DLH
+15,"Atlanta, GA",ATL
+22,"Fayetteville, NC",FAY
+29,"New York, NY",JFK
+36,"Norfolk, VA",ORF
+43,"Minneapolis, MN",MSP
+50,"Pittsburgh, PA",PIT
+57,"Baltimore, MD",BWI
+71,"Roanoke, VA",ROA
+85,"Detroit, MI",DTW
+90,"Knoxville, TN",TYS
+98,"Cincinnati, OH",CVG
+103,"Wilmington, NC",ILM
+117,"Cedar Rapids/Iowa City, IA",CID
+124,"Charleston/Dunbar, WV",CRW
+131,"Bangor, ME",BGR
+144,"Raleigh/Durham, NC",RDU
+158,"Dayton, OH",DAY
+165,"Key West, FL",EYW
+170,"Newark, NJ",EWR
+182,"Charlotte, NC",CLT
+198,"St. Louis, MO",STL
+200,"Evansville, IN",EVV
+214,"Greer, SC",GSP
+230,"Fayetteville, AR",XNA
+237,"Jacksonville, FL",JAX
+260,"Providence, RI",PVD
+267,"Charleston, SC",CHS
+280,"Savannah, GA",SAV
+298,"Grand Rapids, MI",GRR
+305,"Cleveland, OH",CLE
+326,"Chattanooga, TN",CHA
+343,"Lafayette, LA",LFT
+349,"Asheville, NC",AVL
+358,"Green Bay, WI",GRB
+388,"Milwaukee, WI",MKE
+402,"Gainesville, FL",GNV
+417,"Chicago, IL",MDW
+424,"Burlington, VT",BTV
+427,"Richmond, VA",RIC
+440,"Saginaw/Bay City/Midland, MI",MBS
+456,"Albany, NY",ALB
+470,"Baton Rouge, LA",BTR
+485,"Montgomery, AL",MGM
+502,"Minot, ND",MOT
+543,"Greensboro/High Point, NC",GSO
+564,"Nashville, TN",BNA
+581,"State College, PA",SCE
+594,"Philadelphia, PA",PHL
+614,"Memphis, TN",MEM
+620,"Omaha, NE",OMA
+642,"Madison, WI",MSN
+661,"Marquette, MI",MQT
+693,"Appleton, WI",ATW
+721,"Syracuse, NY",SYR
+740,"Kansas City, MO",MCI
+799,"Mosinee, WI",CWA
+827,"Columbia, SC",CAE
+876,"Albany, GA",ABY
+884,"Rochester, NY",ROC
+896,"Ithaca/Cortland, NY",ITH
+904,"Columbus, OH",CMH
+949,"White Plains, NY",HPN
+982,"Lexington, KY",LEX
+990,"Indianapolis, IN",IND
+992,"Springfield, MO",SGF
+999,"Traverse City, MI",TVC
+1027,"Des Moines, IA",DSM
+1121,"Binghamton, NY",BGM
+1126,"Charlottesville, VA",CHO
+1185,"Grand Forks, ND",GFK
+1199,"Kalamazoo, MI",AZO
+1222,"Austin, TX",AUS
+1246,"Harrisburg, PA",MDT
+1275,"Brunswick, GA",BQK
+1288,"Huntsville, AL",HSV
+1301,"Monroe, LA",MLU
+1333,"Augusta, GA",AGS
+1396,"Myrtle Beach, SC",MYR
+1430,"Alexandria, LA",AEX
+1473,"Birmingham, AL",BHM
+1485,"Buffalo, NY",BUF
+1486,"Washington, DC",DCA
+1492,"Lansing, MI",LAN
+1523,"Valdosta, GA",VLD
+1566,"Bristol/Johnson City/Kingsport, TN",TRI
+1616,"Dothan, AL",DHN
+1647,"Gulfport/Biloxi, MS",GPT
+1685,"Louisville, KY",SDF
+1744,"Columbus, MS",GTR
+1791,"Portland, ME",PWM
+1807,"La Crosse, WI",LSE
+1838,"Jackson/Vicksburg, MS",JAN
+1874,"Chicago, IL",ORD
+1896,"Allentown/Bethlehem/Easton, PA",ABE
+1928,"Shreveport, LA",SHV
+2013,"Mobile, AL",MOB
+2016,"Columbus, GA",CSG
+2041,"Washington, DC",IAD
+2110,"Worcester, MA",ORH
+2117,"Sioux Falls, SD",FSD
+2335,"New Orleans, LA",MSY
+2336,"Dallas/Fort Worth, TX",DFW
+2340,"Wichita, KS",ICT
+2342,"Miami, FL",MIA
+2351,"Los Angeles, CA",LAX
+2358,"Kahului, HI",OGG
+2372,"Honolulu, HI",HNL
+2386,"San Francisco, CA",SFO
+2399,"Kona, HI",KOA
+2452,"Phoenix, AZ",PHX
+2454,"Jackson, WY",JAC
+2456,"Las Vegas, NV",LAS
+2464,"Sacramento, CA",SMF
+2481,"Santa Ana, CA",SNA
+2525,"Lihue, HI",LIH
+2574,"Denver, CO",DEN
+2576,"Salt Lake City, UT",SLC
+2584,"San Diego, CA",SAN
+2737,"San Juan, PR",SJU
+2763,"Houston, TX",IAH
+2770,"Seattle, WA",SEA
+3100,"Anchorage, AK",ANC
+3151,"San Antonio, TX",SAT
+3175,"Boise, ID",BOI
+3230,"Charlotte Amalie, VI",STT
+3231,"Boston, MA",BOS
+3252,"Tampa, FL",TPA
+3313,"Fort Lauderdale, FL",FLL
+3412,"El Paso, TX",ELP
+3440,"Tulsa, OK",TUL
+3481,"Orlando, FL",MCO
+3608,"Fort Myers, FL",RSW
+3622,"Amarillo, TX",AMA
+3873,"Colorado Springs, CO",COS
+3915,"West Palm Beach/Palm Beach, FL",PBI
+3961,"Eugene, OR",EUG
+3982,"Ontario, CA",ONT
+4120,"Oklahoma City, OK",OKC
+4496,"Panama City, FL",ECP
+4657,"Albuquerque, NM",ABQ
+4713,"Pensacola, FL",PNS
+4818,"Sarasota/Bradenton, FL",SRQ
+4832,"Tucson, AZ",TUS
+4853,"Valparaiso, FL",VPS
+4942,"Santa Barbara, CA",SBA
+4994,"Fresno, CA",FAT
+5010,"Reno, NV",RNO
+5038,"Eagle, CO",EGE
+5059,"Gunnison, CO",GUC
+5109,"Hayden, CO",HDN
+5282,"Little Rock, AR",LIT
+5310,"Portland, OR",PDX
+5427,"Palm Springs, CA",PSP
+5496,"Mission/McAllen/Edinburg, TX",MFE
+5777,"Lubbock, TX",LBB
+5800,"San Jose, CA",SJC
+5865,"Montrose/Delta, CO",MTJ
+6092,"Scranton/Wilkes-Barre, PA",AVP
+6445,"Burbank, CA",BUR
+6835,"Bozeman, MT",BZN
+6911,"Daytona Beach, FL",DAB
+6976,"Missoula, MT",MSO
+7067,"Bakersfield, CA",BFL
+7248,"San Luis Obispo, CA",SBP
+7730,"Christiansted, VI",STX
+7952,"Spokane, WA",GEG
+8191,"Juneau, AK",JNU
+8192,"Ketchikan, AK",KTN
+8193,"Sitka, AK",SIT
+8222,"Fairbanks, AK",FAI
+8223,"Dallas, TX",DAL
+8270,"Everett, WA",PAE
+8307,"Santa Rosa, CA",STS
+8352,"Bend/Redmond, OR",RDM
+8489,"Bethel, AK",BET
+8490,"Barrow, AK",BRW
+8493,"Kotzebue, AK",OTZ
+8498,"Yakutat, AK",YAK
+8499,"Cordova, AK",CDV
+8505,"Wrangell, AK",WRG
+8507,"Petersburg, AK",PSG
+8524,"Deadhorse, AK",SCC
+8558,"Nome, AK",OME
+8647,"Oakland, CA",OAK
+8771,"Kodiak, AK",ADQ
+9218,"Adak Island, AK",ADK
+10675,"Aguadilla, PR",BQN
+10710,"Ponce, PR",PSE
+13040,"Billings, MT",BIL
+13958,"Bismarck/Mandan, ND",BIS
+14265,"Kalispell, MT",FCA
+14641,"Melbourne, FL",MLB
+15060,"Tallahassee, FL",TLH
+15540,"Jacksonville/Camp Lejeune, NC",OAJ
+16680,"Fargo, ND",FAR
+16827,"Rochester, MN",RST
+16960,"Houston, TX",HOU
+17925,"Pasco/Kennewick/Richland, WA",PSC
+18557,"Islip, NY",ISP
+18632,"Newburgh/Poughkeepsie, NY",SWF
+18634,"Bloomington/Normal, IL",BMI
+18657,"Trenton, NJ",TTN
+21066,"Belleville, IL",BLV
+21069,"Stockton, CA",SCK
+21071,"Punta Gorda, FL",PGD
+21072,"Grand Island, NE",GRI
+21074,"Provo, UT",PVU
+21079,"Phoenix, AZ",AZA
+21080,"Sanford, FL",SFB
+21082,"St. Cloud, MN",STC
+21098,"St. Petersburg, FL",PIE
+21101,"Peoria, IL",PIA
+21102,"Toledo, OH",TOL
+21114,"Rockford, IL",RFD
+21119,"Akron, OH",CAK
+21126,"Bellingham, WA",BLI
+21147,"Columbus, OH",LCK
+21162,"Hagerstown, MD",HGR
+21167,"Monterey, CA",MRY
+21170,"Grand Junction, CO",GJT
+21176,"Flint, MI",FNT
+21184,"Springfield, IL",SPI
+21213,"Moline, IL",MLI
+21218,"Concord, NC",USA
+21220,"Owensboro, KY",OWB
+21232,"Niagara Falls, NY",IAG
+21236,"Rapid City, SD",RAP
+21244,"Plattsburgh, NY",PBG
+21265,"Laredo, TX",LRD
+21300,"Elmira/Corning, NY",ELM
+21357,"Fort Wayne, IN",FWA
+21387,"Medford, OR",MFR
+21539,"South Bend, IN",SBN
+21647,"Clarksburg/Fairmont, WV",CKB
+21719,"Idaho Falls, ID",IDA
+21806,"Santa Maria, CA",SMX
+21814,"Ashland, WV",HTS
+21995,"Portsmouth, NH",PSM
+22147,"Great Falls, MT",GTF
+24089,"Long Beach, CA",LGB
+24148,"Hilo, HI",ITO
+24257,"Pago Pago, TT",PPG
+24284,"Columbia, MO",COU
+24777,"San Angelo, TX",SJT
+24804,"Manhattan/Ft. Riley, KS",MHK
+24993,"Killeen, TX",GRK
+25124,"Hilton Head, SC",HHH
+25300,"Corpus Christi, TX",CRP
+25416,"Lake Charles, LA",LCH
+25636,"Midland/Odessa, TX",MAF
+25898,"Durango, CO",DRO
+25905,"Waterloo, IA",ALO
+26213,"Santa Fe, NM",SAF
+26245,"Harlingen/San Benito, TX",HRL
+26271,"Champaign/Urbana, IL",CMI
+26369,"Fort Smith, AR",FSM
+26423,"Abilene, TX",ABI
+26584,"Brownsville, TX",BRO
+27704,"Atlantic City, NJ",ACY
+28087,"Manchester, NH",MHT
+42671,"Latrobe, PA",LBE
+44613,"Greenville, NC",PGV
+44759,"Longview, TX",GGG
+44760,"Aspen, CO",ASE
+44764,"Waco, TX",ACT
+44768,"Yuma, AZ",YUM
+44773,"Beaumont/Port Arthur, TX",BPT
+44782,"Tyler, TX",TYR
+44808,"Roswell, NM",ROW
+44820,"Wichita Falls, TX",SPS
+44824,"Texarkana, AR",TXK
+44830,"Garden City, KS",GCK
+44837,"Flagstaff, AZ",FLG
+44864,"Lawton/Fort Sill, OK",LAW
+44885,"College Station/Bryan, TX",CLL
+44970,"Del Rio, TX",DRT
+44997,"Stillwater, OK",SWO
+45181,"St. George, UT",SGU
+46297,"Decatur, IL",DEC
+46302,"Scottsbluff, NE",BFF
+46304,"Meridian, MS",MEI
+46305,"Hattiesburg/Laurel, MS",PIB
+46318,"Hancock/Houghton, MI",CMX
+46324,"Riverton/Lander, WY",RIW
+46325,"Cheyenne, WY",CYS
+46326,"Laramie, WY",LAR
+46330,"Casper, WY",CPR
+46334,"Johnstown, PA",JST
+46335,"Devils Lake, ND",DVL
+46341,"Dickinson, ND",DIK
+46343,"Williston, ND",XWA
+46375,"North Platte, NE",LBF
+46407,"Arcata/Eureka, CA",ACV
+46430,"Fort Dodge, IA",FOD
+46483,"Gillette, WY",GCC
+46492,"Sun Valley/Hailey/Ketchum, ID",SUN
+46579,"Salina, KS",SLN
+46600,"Cody, WY",COD
+46626,"Redding, CA",RDD
+46723,"Mason City, IA",MCW
+46724,"Joplin, MO",JLN
+46732,"Moab, UT",CNY
+46735,"Rock Springs, WY",RKS
+46876,"Victoria, TX",VCT
+46877,"Prescott, AZ",PRC
+46878,"Hays, KS",HYS
+46879,"Sioux City, IA",SUX
+46887,"Sheridan, WY",SHR
+46889,"Jamestown, ND",JMS
+46914,"Bishop, CA",BIH
+46961,"Dodge City, KS",DDC
+46986,"Lewiston, ID",LWS
+47003,"Liberal, KS",LBL
+47043,"Lincoln, NE",LNK
+47203,"Vernal, UT",VEL
+47389,"Helena, MT",HLN
+47668,"Pueblo, CO",PUB
+47813,"North Bend/Coos Bay, OR",OTH
+49564,"Elko, NV",EKO
+49566,"Twin Falls, ID",TWF
+49569,"Sault Ste. Marie, MI",CIU
+49574,"International Falls, MN",INL
+49575,"Cedar City, UT",CDC
+49578,"Hibbing, MN",HIB
+49581,"Escanaba, MI",ESC
+49582,"Iron Mountain/Kingsfd, MI",IMT
+49648,"Pocatello, ID",PIH
+49650,"Rhinelander, WI",RHI
+49653,"Butte, MT",BTM
+49783,"Aberdeen, SD",ABR
+49786,"Brainerd, MN",BRD
+49881,"Alpena, MI",APN
+49883,"Pellston, MI",PLN
+50239,"Bemidji, MN",BJI
+52489,"Guam, TT",GUM
+52491,"Saipan, TT",SPN
+99263,"New Bern/Morehead/Beaufort, NC",EWN
+102273,"Erie, PA",ERI
+206414,"King Salmon, AK",AKN
+235646,"Dillingham, AK",DLG
+235842,"Hyannis, MA",HYA
+235845,"Nantucket, MA",ACK
+235986,"Martha's Vineyard, MA",MVY
+274903,"Walla Walla, WA",ALW
+276366,"West Yellowstone, MT",WYS
+290727,"Gustavus, AK",GST
+661485,"Newport News/Williamsburg, VA",PHF
+734341,"Hobbs, NM",HOB
