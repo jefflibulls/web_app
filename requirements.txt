@@ -5,4 +5,5 @@ scikit-learn
 amadeus
 meteostat
 streamlit
+streamlit_option_menu
 pyarrow
