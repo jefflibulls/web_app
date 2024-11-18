@@ -16,6 +16,8 @@ import numpy as np
 import sklearn as sk
 from amadeus import Client, ResponseError
 from meteostat import Daily, Point
+import matplotlib.pyplot as plt
+import matplotlib.patches as patches
 
 
 class flight_data_prep:
@@ -84,7 +86,7 @@ class flight_data_prep:
             df = pd.DataFrame(parsed_data)
 
             # Filter by airline, if specified
-            if airline is not None:
+            if not df.empty and airline is not None:
                 df = df.loc[df['orig_airline']==airline, ].copy()
 
             return df
@@ -101,7 +103,8 @@ class flight_data_prep:
         flight_info['Origin'] = flight_info['origin']
         flight_info['Dest'] = flight_info['destination']
         flight_info['departure_time'] = pd.to_datetime(flight_info['departure_time'])
-        flight_info['dep_date'] = pd.to_datetime(flight_info['departure_time'].dt.date)
+        flight_info['dep_date_ts'] = pd.to_datetime(flight_info['departure_time'].dt.date)
+        flight_info['dep_date'] = flight_info['departure_time'].dt.strftime('%Y-%m-%d')
         flight_info['Month'] = flight_info['departure_time'].dt.month
         flight_info['DayofMonth'] = flight_info['departure_time'].dt.day 
         flight_info['DayOfWeek'] = flight_info['departure_time'].dt.dayofweek + 1
@@ -153,7 +156,7 @@ class flight_data_prep:
             
             # Meteostat API calls for departing airports
             loc = Point(flight_info['DEP_LAT'][i], flight_info['DEP_LON'][i]) # Get nearest weather station based on lat/lon of airport
-            data = Daily(loc, flight_info['dep_date'][i], flight_info['dep_date'][i], model=True) # Get weather forecast given lat/lon and flight date
+            data = Daily(loc, flight_info['dep_date_ts'][i], flight_info['dep_date_ts'][i], model=True) # Get weather forecast given lat/lon and flight date
             data = data.fetch()
             
             # Sometimes there are no weather stations near an airport.  If so, create empty row to append to output data for that location
@@ -163,9 +166,9 @@ class flight_data_prep:
             else:
                 orig_weather_dt = pd.concat([orig_weather_dt, data], axis=0, ignore_index=True)
             
-            # Meteostat API calls for departing airports
+            # Meteostat API calls for destination airports
             loc = Point(flight_info['DEST_LAT'][i], flight_info['DEST_LON'][i])
-            data = Daily(loc, flight_info['dep_date'][i], flight_info['dep_date'][i], model=True)
+            data = Daily(loc, flight_info['dep_date_ts'][i], flight_info['dep_date_ts'][i], model=True)
             data = data.fetch()
             
             if data.empty:
@@ -189,9 +192,12 @@ class flight_data_prep:
         
         # If flight api is invoked, get data from Amadeous api call.  If not, use test data
         if self.flight_api:
-            data = self.get_flight_info(dep_airport, dest_airport, dep_date, airline=None)
-            data = self.flight_data_transformers(data)
-            data = self.get_weather_info(data)
+            data = self.get_flight_info(dep_airport, dest_airport, dep_date, airline)
+            if data.empty:
+                print('No data returned from API.')
+            else:
+                data = self.flight_data_transformers(data)
+                data = self.get_weather_info(data)
         else:
             # Filter by airline, if specified
             data = self.flight_api_test_df
@@ -317,3 +323,84 @@ class sentiment_scoring:
 
         return airlines.map(sentiment_mapping)
         
+
+class utilities:
+
+    def __init__(self):
+        pass # Nothing to initialize
+
+    # Function to create a risk dial
+    def create_risk_dial(self, risk_value):
+        fig, ax = plt.subplots(figsize=(5, 3), dpi=150)  # Smaller size with higher dpi
+
+        # Draw the arc segments for the risk zones
+        dial_colors = ['red', 'orange', 'yellow', 'green']
+        arc_angles = [0, 45, 90, 135, 180]  # Angles in degrees
+
+        for i in range(len(dial_colors)):
+            # Draw each arc segment as a Wedge to make it thicker
+            wedge = patches.Wedge(
+                center=(0, 0),  # Center of the circle
+                r=1,  # Outer radius
+                theta1=arc_angles[i],  # Start angle of the wedge
+                theta2=arc_angles[i + 1],  # End angle of the wedge
+                color=dial_colors[i],
+                alpha=0.6,
+                width=0.75  # Thickness of the wedge (adjust as needed)
+            )
+            ax.add_patch(wedge)
+
+        # Adjust the needle calculation
+        angle = (risk_value / 10) * 180  # Convert risk value to degrees (0 to 180)
+        angle_radians = np.radians(180 - angle)  # Adjust for the correct direction
+
+        # Draw the needle
+        needle_length = 0.92
+        ax.plot(
+            [0, needle_length * np.cos(angle_radians)],
+            [0, needle_length * np.sin(angle_radians)],
+            color='black',
+            lw=3
+        )
+
+        # Add a black circle at the root of the needle for better visual effect
+        root_circle = patches.Circle(
+            (0, 0),  # Center of the circle
+            radius=0.05,  # Radius of the circle (adjust as needed)
+            color='black'
+        )
+        ax.add_patch(root_circle)
+
+        # Dial setup
+        ax.set_xlim(-1.1, 1.1)
+        ax.set_ylim(-0.1, 1.1)
+        ax.axis('off')
+
+        # Generate label
+        if risk_value > 7.5:
+            risk_label = 'HIGH'
+            label_color = dial_colors[0]
+        elif risk_value > 5:
+            risk_label = 'ELEVATED'
+            label_color = dial_colors[1]
+        elif risk_value > 2.5:
+            risk_label = 'MODERATE'
+            label_color = dial_colors[2]
+        else:
+            risk_label = 'LOW'
+            label_color = dial_colors[3]
+
+        # Add risk level labels under the dial
+        ax.text(
+            x=0, y=1.2,  # x and y positions
+            s=risk_label,
+            fontsize=15,  # Font size for the labels
+            fontweight='bold',
+            color=label_color,
+            ha='center',  # Horizontal alignment
+            va='center',  # Vertical alignment
+            bbox=dict(facecolor='black', alpha=0.2, edgecolor='white')
+        )
+
+
+        return fig
