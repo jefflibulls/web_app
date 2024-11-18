@@ -9,4 +9,3 @@ streamlit_option_menu
 pyarrow
 xgboost
 matplotlib
-warnings

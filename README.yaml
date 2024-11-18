@@ -9,6 +9,8 @@ Instructions for starting up the web app:
     - PyArrow
     - amadeus (future flight info API)
     - meteostat (weather forecast API)
+    - matplotlib
+    - warning
 
     - If you don't have any of the above libaries:
         - pip install "library name"
@@ -27,3 +29,9 @@ Instructions for starting up the web app:
     - After running the above command, you will be provided a local URL in the form:
         - http://localhost.8501
     - Open that URL in your web browser.
+
+4- Recommendations for testing the web app:
+    - The web app is unlikely to be set up to handle all edge cases.
+    - In addition, the API used to get actual flight info is using a test environment and is unstable.
+    - To ensure testing success, keep flight API deactivated.
+    - Check "flight_api_test_data.csv" for scenarios that will work.
